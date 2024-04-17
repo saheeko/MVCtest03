@@ -35,7 +35,7 @@ public class MemberUpdateController extends HttpServlet {
 		 if(cnt>0) {
 			 //가입성공
 			 //out.println("insert success"); 다시 리스트페이지로가기위해 /MVC01/memberList.do
-			 response.sendRedirect("/MVC01/memberList.do"); //가입성공하면  RESPONSE응답을  하고 보낸다다시 (sendRedirect)
+			 response.sendRedirect("/MVC03/memberList.do"); //가입성공하면  RESPONSE응답을  하고 보낸다다시 (sendRedirect)
 		 }else {
 			 //가입실패 - 예외 객체를 생성 후 WAS=TOMCAT에 던짐
 			 throw new ServletException("not insert");
